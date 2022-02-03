@@ -3,11 +3,12 @@ const { Pokemon, Type, Op } = require('../db');
 
 server.get("/", async function(req, res, next){
     try {
-        let { page } = req.query; 
-        if(!page) page = 1;
-        const paginado = 10;
+        // let { page } = req.query; 
+        // if(!page) page = 1;
+        // const paginado = 10;
         const dbPokemons = await Pokemon.findAll({include: {model: Type}})
-        res.status(200).json(dbPokemons.slice(paginado * (page -1), (paginado *(page - 1)) + paginado))
+        // res.status(200).json(dbPokemons.slice(paginado * (page -1), (paginado *(page - 1)) + paginado))
+        res.status(200).json(dbPokemons)
         
     } catch (error) {
         next(error)        
@@ -71,7 +72,7 @@ server.post("/add", function(req, res, next){
         pokemon.addTypes(type)
         .then(async ()=>{
             pokemon.type = await pokemon.getTypes()
-            console.log(pokemon.type)
+            
             res.json({
                 name: pokemon.name,
                 life: pokemon.life,

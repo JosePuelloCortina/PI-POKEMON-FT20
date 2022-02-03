@@ -1,0 +1,81 @@
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    background-color: var(--dark-cyan);
+    background-repeat: no-repeat, no-repeat;
+    background-position: right 50vw bottom 50vh, left 50vw top 50vh;
+  }
+      
+    .card {
+      background-color: orange;
+      margin: 20px;
+      width: 15rem;
+      border-radius: 16px;
+      overflow: hidden;
+      -webkit-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+              box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    }
+
+    #cardlife{
+      display: flex;
+      justify-content: flex-end;
+    }
+    
+      
+    .card-body {
+      display: -webkit-ox;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              margin-left: 5%;
+              margin-right: 5%;
+      border-bottom: 1px solid rgba(153, 153, 153, 0.383);
+    }
+    
+    .card-body-img {
+      border: 2px solid gray;
+      border-radius: 16px;    
+      background-color:rgb(255, 255, 255);
+    }
+    
+    .card-body-name {
+      margin-top: 1rem;
+      font-size: 1.8rem;
+    }
+    
+    .card-body-name span {
+      color: var(--dark-gray);
+      font-weight: 400;
+
+
+    }
+    
+    .card-body-text {
+      color: var(--white);
+      font-size: 1.3rem;
+      margin-top: 0;
+      margin-bottom: 2rem;
+    }
+    
+    .card-footer {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+    }
+    
+    .card-footer-poke {
+      text-align: center;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+    }
+    
+    .card-footer-poke p {
+      letter-spacing: 1px;
+    }
+    

@@ -1,0 +1,14 @@
+.div{
+    background-color: #282c34;
+    background-image: url('../../image/pokeHome.jpg');
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+    background-size: cover; 
+  }

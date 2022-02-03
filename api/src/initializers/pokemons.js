@@ -4,7 +4,7 @@ const axios = require('axios');
 
 const initializePokemons = async () => {
     try{
-        let response = await axios.get('https://pokeapi.co/api/v2/pokemon?offset=0&limit=112'); 
+        let response = await axios.get('https://pokeapi.co/api/v2/pokemon?offset=0&limit=100'); 
         let pokemons = await axios.all(response.data.results.map((p) => axios.get(p.url)));
 
         pokemons = pokemons.forEach(async p => {            
